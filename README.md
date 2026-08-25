@@ -40,11 +40,19 @@ not per item. IRONCLAD holds two ArmaLites on item 399 at different qualities;
 one shared file would have put a grey `STANDARD · 64.72%` banner on the $325m
 Yellow rifle.
 
-## What v2 carries
+## What each tag carries
 
 Displayable stock only. Assets for gear that has sold are **not** carried
 forward — `146` (Yasukuni Sword), `655` (Riot Helmet) and `656` (Riot Body)
-exist at `v1`/`v1.0.1` and stop there. v2 is the current board, not a superset.
+exist at `v1`/`v1.0.1` and stop there. A tag is the board as it stood, not a
+superset of the one before it.
+
+**v3 (2026-08-25)** — adds `399-6-24.png`, a third live ArmaLite M-15A4
+(Standard 6.24%) on item 399. The other seven banners are byte-identical to v2:
+a banner carries no price, so a buyout change cannot move one. Eight banners for
+eight displayable rows.
+
+**v2 (2026-08-25)** — the first authored-banner tag. Seven banners.
 
 ## History
 
