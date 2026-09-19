@@ -63,6 +63,11 @@ forward — `146` (Yasukuni Sword), `655` (Riot Helmet) and `656` (Riot Body)
 exist at `v1`/`v1.0.1` and stop there. A tag is the board as it stood, not a
 superset of the one before it.
 
+**v20 (2026-09-18)**: adds `banners/goldan-desk.png`, the channel banner for
+#goldan-desk (1672x941 RGB, opaque). It is the first file outside `items/` and `nav/`.
+It is channel art rather than a card, so the 600x300 card spec does not apply. The v19
+item banners are unchanged.
+
 **v15 (2026-09-08)** — adds `241-166-26.png`, a second Bushmaster Carbon 15
 (Orange 166.26%, 23% Powerful) on item 241. A PURE ADDITION with a twist: the
 ID's earlier row sold at v12 and its bare `241.png` was cut then, so nothing
