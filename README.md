@@ -104,6 +104,28 @@ small to resolve, and the upscaler rendered it as plausible-looking but
 **meaningless glyphs**. v2 does not have that problem, because v2 does not
 invent pixels.
 
+## `wof/` — Wall of Fame card plate (v21 onward)
+
+Ten authored PNGs for the war-honours card the ops repo renders in `wof/`: the
+1060x1484 `plate.png`, a wax `seal.png`, four `medal_*.png` (blood, bolt, skull,
+shield) and four `stamp_*.png` tier marks (bronze, silver, gold, legend).
+
+These are **not** derived from Torn artwork and none of the item-banner pipeline
+above applies to them — no upscaling, no NEAREST enlargement, no tier border.
+They are source art delivered by Noe and committed byte-for-byte; the renderer
+composites text and a portrait onto them and never modifies the files.
+
+They live here rather than in the ops repo because at ~15 MB across ten files
+they are three times the footprint that prompted the 2026-08-19 "if it grows,
+ops should stop tracking them" note. The ops package fetches them from the tag
+on first use and caches them locally; a cache miss with no network is a hard
+error naming the tag and the URL, never a silently degraded card.
+
+`wof/` is versioned by the SAME tag sequence as `items/` and `nav/` — one tag
+names the whole board as it stood. A WoF-only change still cuts a new tag and
+leaves `torn_images.ASSET_TAG` (the item-banner tag) wherever it was, exactly as
+v20's `banners/goldan-desk.png` did.
+
 ## Usage
 
 Served over jsDelivr, pinned to a tag so a URL never changes under a live card:
